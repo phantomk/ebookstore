@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户列表</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+
+    <!-- libraries -->
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/user-list.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <button type="button" class="btn btn-navbar visible-phone" id="menu-toggler">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="brand" href="index.html"><img src="img/logo.png" /></a>
+
+            <ul class="nav pull-right">                
+                <li class="settings hidden-phone">
+                    <a href="signin.html" role="button">
+                        <i class="icon-share-alt"></i>
+                    </a>
+                </li>
+            </ul>            
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li>                
+                <a href="index.html">
+                    <i class="icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>            
+            
+            <li class="active">
+                <a  href="user-list.html">
+                    <i class="icon-group"></i>
+                    <span>用户管理</span>
+                </a>
+            </li>
+ 
+            <li>
+                <a href="upbook.html">
+                    <i class="icon-cog"></i>
+                    <span>书籍上传</span>
+                </a>
+            </li>
+           
+        </ul>
+    </div>
+    <!-- end sidebar -->
+    
+
+	<!-- main container -->
+    <div class="content">
+         <div class="container-fluid">
+            <div id="pad-wrapper" class="users-list">
+                <div class="row-fluid header">
+                    <h3>用户列表</h3>
+                    <div class="span10 pull-right">
+                        <input type="text" class="span5 search" placeholder="输入一个用户名..." />
+                        
+                        <!-- custom popup filter -->
+                        <!-- styles are located in css/elements.css -->
+                        <!-- script that enables this dropdown is located in js/theme.js -->
+                        <div class="ui-dropdown">
+                            <div class="head" data-toggle="tooltip" title="Click me!">
+                                过滤用户
+                                <i class="arrow-down"></i>
+                            </div>  
+                            <div class="dialog">
+                                <div class="pointer">
+                                    <div class="arrow"></div>
+                                    <div class="arrow_border"></div>
+                                </div>
+                                <div class="body">
+                                    <p class="title">
+                                        显示用户:
+                                    </p>
+                                    <div class="form">
+                                        <select>
+                                            <option />姓名
+                                            <option />邮箱
+                                            <option />订单号
+                                            
+                                        </select>
+                                        <select>
+                                            <option />相等
+                                            <option />不等
+                                            <option />更多
+                                            <option />开始
+                                            
+                                        </select>
+                                        <input type="text" />
+                                        <a class="btn-flat small">添加过滤</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Users table -->
+                <div class="row-fluid table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="span4 sortable">
+                                    姓名
+                                </th>
+                                <th class="span3 sortable">
+                                    <span class="line"></span>注册时间
+                                </th>
+                                <th class="span2 sortable">
+                                    <span class="line"></span>消费
+                                </th>
+                                <th class="span3 sortable align-right">
+                                    <span class="line"></span>邮箱
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!-- row -->
+                        <tr class="first">
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        <!-- row -->
+                        <tr>
+                            <td>
+                                <img src="img/contact-img.png" class="img-circle avatar hidden-phone" />
+                                <a href="user-profile.html" class="name">姓名</a>
+                                
+                            </td>
+                            <td>
+                                Mar 13, 2012
+                            </td>
+                            <td>
+                                $ 4,500.00
+                            </td>
+                            <td class="align-right">
+                                <a href="#">hdu@edu.cn</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination pull-right">
+                    <ul>
+                        <li><a href="#">&#8249;</a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&#8250;</a></li>
+                    </ul>
+                </div>
+                <!-- end users table -->
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+</html>

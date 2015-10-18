@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>书籍上传</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.css" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/upbook.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <a class="brand" href="index.html"><img src="img/logo.png" /></a>
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="user-list.html">用户管理</a></li>
+                    <li class="active"><a href="upbook.html">书籍上传</a></li>
+                    
+                </ul>
+            </div>
+            
+             
+        </div>
+    </div>
+    <!-- end navbar -->
+
+	<!-- main container .wide-content is used for this layout without sidebar :)  -->
+    <div class="content wide-content">
+        <div class="container-fluid">
+            <div class="settings-wrapper" id="pad-wrapper">
+                <!-- avatar column -->
+                <div class="span3 avatar-box">
+                    <div class="personal-image">
+                        <img src="img/book.jpg" class="avatar " />
+                        <p>上传书籍封面</p>
+                        
+                        <input type="file" />
+                    </div>
+                </div>
+
+                <!-- edit form column -->
+                <div class="span7 personal-info">
+                    
+                    <h5 class="personal-title">书籍信息</h5>
+
+                    <form />
+                        <div class="field-box">
+                            <label>书名:</label>
+                            <input class="span5 inline-input" type="text" value="" />
+                        </div>
+                        <div class="field-box">
+                            <label>作者:</label>
+                            <input class="span5 inline-input" type="text" value="" />
+                        </div>
+                        <div class="field-box">
+                            <label>价格:</label>
+                            <input class="span5 inline-input" type="text" value="" />
+                        </div>
+                        <div class="field-box">
+                            <label>数量:</label>
+                            <input class="span5 inline-input" type="text" value="" />
+                        </div>
+                        
+     
+                        
+                        <div class="field-box">
+                            <label>一级分类:</label>
+                            <div class="ui-select">
+                                <select id="num1" name="user[time_zone]">
+                                    <option>一级分类1</option>
+                                    <option>一级分类2</option>
+                                    <option>一级分类3</option>
+                                    <option>一级分类4</option>
+                                    <option>一级分类5</option>                                  
+                                </select>
+                            </div>
+                            <label>二级分类:</label>
+                            <div class="ui-select">
+                                <select class="num2" name="user[time_zone]">
+                                    <option>二级分类1</option> 
+                                    <option>二级分类1</option> 
+                                    <option>二级分类1</option> 
+                                    <option>二级分类1</option> 
+                                    <option>二级分类1</option> 
+                                </select>
+                                <select  class="num2" name="user[time_zone]">
+                                    <option>二级分类2</option> 
+                                    <option>二级分类2</option> 
+                                    <option>二级分类2</option> 
+                                    <option>二级分类2</option> 
+                                    <option>二级分类2</option> 
+                                </select>
+                                <select  class="num2" name="user[time_zone]">
+                                    <option>二级分类3</option> 
+                                    <option>二级分类3</option> 
+                                    <option>二级分类3</option> 
+                                    <option>二级分类3</option> 
+                                    <option>二级分类3</option> 
+                                </select>
+                                <select  class="num2" name="user[time_zone]">
+                                    <option>二级分类4</option> 
+                                    <option>二级分类4</option> 
+                                    <option>二级分类4</option> 
+                                    <option>二级分类4</option> 
+                                    <option>二级分类4</option> 
+                                </select>
+                                <select  class="num2" name="user[time_zone]">
+                                    <option>二级分类5</option> 
+                                    <option>二级分类5</option> 
+                                    <option>二级分类5</option> 
+                                    <option>二级分类5</option> 
+                                    <option>二级分类5</option> 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>简介:</label>
+                            
+                            <textarea class="span5"></textarea>
+                        </div>
+                        
+                        <div class="span6 field-box actions">
+                            <input type="button" class="btn-glow primary" value="上传" />
+                            <span>OR</span>
+                            <input type="reset" value="取消" class="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script type="text/javascript">
+       var currentShowCity=0;
+
+ $(document).ready(function(){
+   $("#num1").change(function(){
+	   $("#num1 option").each(function(i,o){
+		   if($(this).attr("selected"))
+		   {
+		 
+			   $(".num2").hide();
+			   $(".num2").eq(i).show();
+			   currentShowCity=i;
+		   }
+	   });
+   });
+   $("#num1").change();
+});
+
+</script>
+
+</body>
+</html>
